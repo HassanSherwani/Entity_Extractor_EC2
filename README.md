@@ -137,3 +137,16 @@ sudo vim fliename
 https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
 
 # Results
+
+### Output from raw text
+
+!["User Interface"](images/1.png)
+
+!["User Interface"](images/2.png)
+
+### Output from loaded test text file
+
+!["User Interface"](images/3.png)
+
+!["User Interface"](images/4.png)
+
