@@ -114,18 +114,26 @@ sudo docker images
 sudo docker-compose up --build -d
 
 ```
+13- Check current running images by:<br>
+```bash
+sudo docker ps
 
-13-Remember to open ports from "Security Groups":<br>
+```
+14-Remember to open ports from "Security Groups":<br>
 
 ```bash
 
 port 8000, 8080 
 ```
 
-On a side note, we can use vim editor by using<br>
+- ^On a side note, we can use vim editor by using<br>
 
 ```bash
 
 sudo vim fliename
 ```
+- ^ for deleting docker image: <br>
+
+https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
+
 # Results
