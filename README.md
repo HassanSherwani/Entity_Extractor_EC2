@@ -45,6 +45,10 @@ git clone (url)
 
 sudo apt-get install docker-compose
 
+OR
+
+sudo apt-get install docker-compose -y
+
 ```
 
 5- check again docker image: <br>
