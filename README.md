@@ -126,6 +126,10 @@ sudo docker ps
 port 8000, 8080 
 ```
 
+15- Associate Elastic IP
+
+16- etup SSL certificate into your AWS EC2 instance i.e using https with elastic IP
+
 - ^On a side note, we can use vim editor by using<br>
 
 ```bash
