@@ -158,3 +158,10 @@ https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-net
 
 !["User Interface"](images/4.png)
 
+# References
+
+- https://www.youtube.com/watch?v=2tQ_Yn6O3f4&list=PL5KTLzN85O4K3zhnNPNCgE_Lt-pUsY7YO
+
+- https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
+
+- https://www.youtube.com/watch?v=rNoRB_7pANo&list=PL5KTLzN85O4I4ljDgueVff0UxIKXtzi-8&index=3
