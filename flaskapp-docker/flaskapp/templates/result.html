@@ -1,0 +1,94 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+
+    <head>
+        <style type="text/css">
+            .scroll {
+                max-height: 250px;
+                overflow-y: auto;
+            }
+        </style>
+    </head>
+    <div
+        class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Results</h1>
+    </div>
+
+    <div class="container">
+        <h4>Input Text</h4>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-10 shadow-sm scroll" id="custom_card">
+                    <pre>{{ rawtext }}</pre>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h4>Parsed Text</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-10 shadow-sm scroll" id="custom_card2">
+                    <p>{{ result[0] | markdown}}</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h4>Extracted Metadata</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-10 shadow-sm scroll" id="custom_card3">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th scope="col">KEY</th>
+                                <th scope="col">CONFIDENCE</th>
+                                <th scope="col">ENT_DETECT</th>
+                                <th scope="col">ENT_LABEL</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for key in result[1] %}
+                            <tr>
+                                <th scope="row">{{key["KEY"]}}</th>
+                                <td>{{key["CONFIDENCE"]}}</td>
+                                <td>{{key["ENT_DETECT"]}}</td>
+                                <td>{{key["ENT_LABEL"]}}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <h4>API Call Details</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <h6>JSON Response</h6>
+                <div class="card mb-5 shadow-sm scroll" id="custom_card2">
+                    <pre>{{result[2]}}</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.3/js/mdb.min.js"></script>
+
+    {% endblock body %}

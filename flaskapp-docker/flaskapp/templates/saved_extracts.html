@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <h1 class="h2">Saved Extractions</h1>
+    </div>
+
+    <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col"> </th>
+            <th scope="col"> </th>
+            <th scope="col"> </th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for file in files %}
+          <tr>
+            <th scope="row">1</th>
+            <td><a href="#">1</a></td>
+            <td>Agreement on Managed Data Center Services TITLE
+                by and between
+                Wisniewski & Sohn GmbH SUPPLIER
+                Hauptstraße 20,
+                74189 Weinsberg
+                – hereinafter referred to as “ Contractor SUPPLIER ” or “ SuP SUPPLIER ” –
+                and</td>
+            <td><a href="#" class="btn btn-info">Export</a></td>
+            <td><a href="#" class="btn btn-danger">Delete</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+{% endblock body %}

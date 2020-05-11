@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{{ dropzone.load_css() }}
+{{ dropzone.style('border: 2px dashed #0087F7; margin: 10%; min-height: 400px;') }}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+    <h1 class="h2">Upload Files</h1>
+  </div>
+  <div class="container" >
+
+{{ dropzone.create(action='upload') }}
+{{ dropzone.load_js() }}
+{{ dropzone.config() }}
+  </div>
+{% endblock body %}
