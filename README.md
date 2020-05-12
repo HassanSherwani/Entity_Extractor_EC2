@@ -45,9 +45,7 @@ git clone (url)
 
 sudo apt-get install docker-compose
 
-OR
 
-sudo apt-get install docker-compose -y
 
 ```
 
@@ -100,6 +98,10 @@ sudo docker images
 ```bash
 
 sudo docker-compose build
+
+OR
+
+sudo apt-get install docker-compose -y
 
 ```
 
