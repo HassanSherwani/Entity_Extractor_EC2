@@ -132,7 +132,7 @@ port 8000, 8080
 
 15- Associate Elastic IP
 
-16- etup SSL certificate into your AWS EC2 instance i.e using https with elastic IP
+16- Setup SSL certificate into your AWS EC2 instance i.e using https with elastic IP
 
 - ^On a side note, we can use vim editor by using<br>
 
@@ -144,6 +144,9 @@ sudo vim fliename
 
 https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
 
+17- To Install AWS CLI v2 & configure IAM role
+
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awsclivs.zip"
 # Results
 
 ### Output from raw text
