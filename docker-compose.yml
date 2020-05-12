@@ -11,4 +11,5 @@ services:
     build: ./nginx
     image: nginx:latest
     container_name: nginx
+    restart: always
     network_mode: host
