@@ -141,7 +141,7 @@ sudo docker ps
 
 ```bash
 
-port 8000, 8080 
+port 8000, 80
 ```
 
 17- Associate Elastic IP
