@@ -72,7 +72,19 @@ sudo apt install python3-pip
 
 ```
 
-7- Run requirements.txt : <br>
+7- Install unzip command :<br>
+
+```bash
+sudo apt install unzip
+```
+
+8-Install gnupg2 pass in case of fargate implementation <br>
+
+```bash
+sudo apt install gnupg2 pass
+```
+
+9- Run requirements.txt : <br>
 
 ```bash
 
@@ -80,21 +92,21 @@ pip3 install -r requirements.txt
 
 ```
 
-8- Check if all needed dependencies are there<br>
+10- Check if all needed dependencies are there<br>
 
 ```bash
 
 pip3 freeze
 
 ```
-9-Check if we have docker images:<br>
+11-Check if we have docker images:<br>
 
 ```bash
 
 sudo docker images
 
 ```
-10-Build docker image : <br>
+12-Build docker image : <br>
 
 
 ```bash
@@ -105,7 +117,7 @@ sudo docker-compose build
 
 ```
 
-11-check again docker images : <br>
+13-check again docker images : <br>
 
 ```bash
 
@@ -113,28 +125,28 @@ sudo docker images
 
 ```
 
-12-To run this image:<br>
+14-To run this image:<br>
 
 ```bash
 
 sudo docker-compose up --build -d
 
 ```
-13- Check current running images by:<br>
+15- Check current running images by:<br>
 ```bash
 sudo docker ps
 
 ```
-14-Remember to open ports from "Security Groups":<br>
+16-Remember to open ports from "Security Groups":<br>
 
 ```bash
 
 port 8000, 8080 
 ```
 
-15- Associate Elastic IP
+17- Associate Elastic IP
 
-16- Setup SSL certificate into your AWS EC2 instance i.e using https with elastic IP
+18- Setup SSL certificate into your AWS EC2 instance i.e using https with elastic IP
 
 - ^On a side note, we can use vim editor by using<br>
 
@@ -146,9 +158,10 @@ sudo vim fliename
 
 https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
 
-17- To Install AWS CLI v2 & configure IAM role
+19- To Install AWS CLI v2 & configure IAM role
 
-curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awsclivs.zip"
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
 # Results
 
 ### Output from raw text
@@ -165,8 +178,12 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awsclivs.zip
 
 # References
 
+- https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d
+
 - https://www.youtube.com/watch?v=2tQ_Yn6O3f4&list=PL5KTLzN85O4K3zhnNPNCgE_Lt-pUsY7YO
 
 - https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-networks/
 
 - https://www.youtube.com/watch?v=rNoRB_7pANo&list=PL5KTLzN85O4I4ljDgueVff0UxIKXtzi-8&index=3
+
+- https://stackoverflow.com/questions/40575584/what-is-the-difference-between-amazon-ecs-and-amazon-ec2
