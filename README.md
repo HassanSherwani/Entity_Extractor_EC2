@@ -1,6 +1,20 @@
 # Entity_Extractor_EC2
 deployment of Entity Extractor application on EC2 instance with Docker.
 
+# Results
+
+### Output from raw text
+
+!["User Interface"](images/1.png)
+
+!["User Interface"](images/2.png)
+
+### Output from loaded test text file
+
+!["User Interface"](images/3.png)
+
+!["User Interface"](images/4.png)
+
 # steps to follow
 
 1- start EC2 instance:<br>
@@ -170,19 +184,7 @@ https://linuxize.com/post/how-to-remove-docker-images-containers-volumes-and-net
 
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 
-# Results
 
-### Output from raw text
-
-!["User Interface"](images/1.png)
-
-!["User Interface"](images/2.png)
-
-### Output from loaded test text file
-
-!["User Interface"](images/3.png)
-
-!["User Interface"](images/4.png)
 
 # References
 
