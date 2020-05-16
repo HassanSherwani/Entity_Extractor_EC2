@@ -59,11 +59,13 @@ sudo apt-get install docker-compose -y
 
 docker <br>
 
+OR
+
 docker-compose 
 
 ```
 
-6- Install pip : <br>
+6- Install pip3 : <br>
 
 
 ```bash
@@ -114,10 +116,23 @@ sudo docker images
 sudo docker-compose build
 
 
-
 ```
 
-13-check again docker images : <br>
+13-To run this image:<br>
+
+```bash
+
+sudo docker-compose up --build (for building image for 1st time and running at same time)
+
+OR
+
+sudo docker-compose up --build -d (to run docker image and also keep terminal console in function)
+
+OR 
+
+sudo docker-compose up (only for running docker image)
+
+14-check again docker images : <br>
 
 ```bash
 
@@ -125,13 +140,6 @@ sudo docker images
 
 ```
 
-14-To run this image:<br>
-
-```bash
-
-sudo docker-compose up --build -d
-
-```
 15- Check current running images by:<br>
 ```bash
 sudo docker ps
