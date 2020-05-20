@@ -188,6 +188,8 @@ curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip
 
 # References
 
+- For Fargate Configration : https://docs.aws.amazon.com/AmazonECS/latest/developerguide/getting-started-fargate.html
+
 - https://medium.com/boltops/gentle-introduction-to-how-aws-ecs-works-with-example-tutorial-cea3d27ce63d
 
 - https://www.youtube.com/watch?v=2tQ_Yn6O3f4&list=PL5KTLzN85O4K3zhnNPNCgE_Lt-pUsY7YO
